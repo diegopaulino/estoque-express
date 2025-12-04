@@ -31,7 +31,6 @@ const query = async (queryObject) => {
   try {
     client = await getNewClient();
     const result = await client.query(queryObject);
-    console.log(result);
     return result;
   } catch (error) {
     const serviceErrorObject = new ServiceError({

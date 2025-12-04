@@ -2,7 +2,6 @@ import { MethodNotAllowedError } from "../infra/errors.js";
 import database from "../infra/database.js";
 
 const getStatus = async (req, res) => {
-  console.log("METODO USADO", req.method === "POST");
   if (req.method === "POST") {
     throw new MethodNotAllowedError();
   }
