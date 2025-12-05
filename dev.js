@@ -23,7 +23,7 @@ async function main() {
     await runCommand("npm", ["run", "services:up"]);
     await runCommand("npm", ["run", "services:wait:database"]);
 
-    const nextProc = spawn("node", ["app.js"], {
+    const nextProc = spawn("nodemon", ["app.js"], {
       stdio: "inherit",
       shell: true,
     });

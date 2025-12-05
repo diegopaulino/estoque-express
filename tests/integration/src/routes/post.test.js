@@ -1,5 +1,5 @@
 import { beforeAll, describe, it, expect } from "vitest";
-import orchestrator from "./tests/orchestrator";
+import orchestrator from "../../../orchestrator";
 
 beforeAll(async () => {
   await orchestrator.waitForAllServices();
